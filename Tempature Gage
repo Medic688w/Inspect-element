@@ -1,0 +1,22 @@
+
+//This is a tempature gage slider. It looks really cool// 
+
+<html>
+	<head>
+		<title>Custom Slider</title>
+	</head>
+	<body>
+	<h1>Tempature</h1>
+	<div id="container">
+		<input id="slider" type="range" min="-273" max="500" value="10" oninput="displayTemp();">
+	</div>
+	<div id="tempDisplay"></div>
+	<script>
+	let s=document.querySelector("#slider");
+	let d=document.querySelector("#tempDisplay");
+	   function displayTemp(){
+		   d.innerHTML=s.value+"°C";
+	   }
+	</script>
+	</body>
+</html>
